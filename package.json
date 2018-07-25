@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "start": "webpack -w & node index",
     "start:dev": "webpack -w & nodemon index.js -e js,html --watch",
-    "seed": "node seed",
-    "db-init": "pg-init auth",
-    "postinstall": "npm run db-init"
+    "seed": "node seed"
   },
   "author": "",
   "license": "ISC",
