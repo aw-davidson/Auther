@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const databaseURI = 'postgres://localhost:5432/auth';
+const databaseURI = process.env.DATABASE_URL || 'postgres://localhost:5432/auth';
 
 const db = new Sequelize(databaseURI, {
   define: {
